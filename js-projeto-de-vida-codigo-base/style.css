@@ -52,10 +52,32 @@ body {
     border-top: none;
 }
 
-.botao:first-child {
+.botao:first-child {  
     border-radius: 40px 40px 0 0;
 }
 
 .botoes {
     display: block;
+}
+.ativo {
+ background-color: var(--botão-ativo);
+ border-bottom: 4px solid var(--verde);
+}
+
+@media screen and (min-width: 768px) {
+
+    
+ .botoes { 
+        display: flex;
+}
+
+.botão:first-child {
+    border-radius: 40px 0 0 0;
+}
+
+botão:first-child {
+    border-radius: 0 40px 0 0;
+}
+
+
 }
